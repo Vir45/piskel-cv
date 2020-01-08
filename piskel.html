@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="google-signin-client_id" content="821675323708-qvhlid3otc9perjhd0omb6jabuqm92qd.apps.googleusercontent.com">
+  <title>simple animation player</title>
+<link href="pageTwo.css?e8855dbfc829594a2391" rel="stylesheet"></head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <p class="logotip"><img src="images/261cc38cf12d97483bb904ace81a7f03.png" alt="logotip"></p>
+      <p class="decription">New Piskel</p>
+      <div class="nav-button">
+        <button id="my-signin2" class="my-signin2" data-theme="dark" ata-width="50" data-height="20" data-longtitle="true"></button>
+        <span id="userName" class="user-name"></span>
+        <button id="sing-out" class="sing-out" hidden>Sign out</button>
+        <button class="create-sprite">Create sprite</button>
+      </div>
+    </header>
+    <main>
+      <div class="main-tools">
+        <div class="tools">
+          <div class="row-0">
+            <button id="unit-sizes-one"><span class="span-unit-sizes-one"></span></button>
+            <button id="unit-sizes-two"><span class="span-unit-sizes-two"></span></button>
+            <button id="unit-sizes-three"><span class="span-unit-sizes-three"></span></button>
+            <button id="unit-sizes-four"><span class="span-unit-sizes-four"></span></button>
+          </div>
+          <div class="row-1">
+            <button id="pen"><img src="images/3a28c3c1e2c898ac6d12f003af4ac17c.png" alt="pen"></button>
+            <button id="stroke"><img src="images/c324e3766924b01c7da1cff6343de761.png" alt="stroke"></button>
+          </div>
+          <div class="row-2">
+            <button id="eraser"><img src="images/409cde9c0b76aefb54395dd3a6b62d9f.png" alt="eraser"></button>
+            <button id="bucketAll"><img src="images/e2d607fbfbe66610b061e1405f5d8631.png" alt="colorswap"></button>
+          </div>
+          <div class="row-3">
+            <button id="bucket"><img src="images/c87ad67c6e604ccfd30e69fbcfb89433.png" alt="paint-bucket"></button>
+            <button id="picker"><img src="images/839092635cca7d43955dba23ef41d4c4.png" alt="colorpicker"></button>
+          </div>
+          <div class="row-4">
+            <div class="first-color">
+              <input type="color" value="#000000" id="primary" hidden><label class="label" for="primary"><span class="span-primary"></span></label>
+            </div>
+            <div class="swap-color">
+              <input type="color" value="#FFFFFF" id="secondary" hidden><label class="label" for="secondary"><span class="span-secondary"></span></label>
+              <button id="swap"><img src="images/a38cfec2d247f5eea7ec3c87177bc7b2.png" alt="swapcolors"></button>
+            </div>
+          </div>
+          <div class="row-5">
+            <button id="keyboard"><img src="images/f8239f2d9ad011ed25b8a1642f2e467f.png" alt="keyboard"></button>
+            <div class="modal-windown" hidden>
+              <p><span class="about-modal-windown">Keyboard shortcuts</span><button id="close" class="close">&#9746;</button></p>
+              <div class="column-div">
+                <div class="colum-1">
+                  <div class="tool pen">
+                    <span class="image"><img src="images/3a28c3c1e2c898ac6d12f003af4ac17c.png" alt="pen"></span>
+                    <span class="tool-name">pen</span>
+                    <span class="current-shortcuts">P</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool stroke">
+                    <span class="image"><img src="images/c324e3766924b01c7da1cff6343de761.png" alt="stroke"></span>
+                    <span class="tool-name">stroke</span>
+                    <span class="current-shortcuts">T</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool eraser">
+                    <span class="image"><img src="images/409cde9c0b76aefb54395dd3a6b62d9f.png" alt="eraser"></span>
+                    <span class="tool-name">eraser</span>
+                    <span class="current-shortcuts">E</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool bucketAll">
+                    <span class="image"><img src="images/e2d607fbfbe66610b061e1405f5d8631.png" alt="colorswap"></span>
+                    <span class="tool-name">colorswap</span>
+                    <span class="current-shortcuts">A</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool bucket">
+                    <span class="image"><img src="images/c87ad67c6e604ccfd30e69fbcfb89433.png" alt="paint-bucket"></span>
+                    <span class="tool-name">bucket</span>
+                    <span class="current-shortcuts">B</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool swap">
+                    <span class="image"><img src="images/a38cfec2d247f5eea7ec3c87177bc7b2.png" alt="swapcolors"></span>
+                    <span class="tool-name">swapcolors</span>
+                    <span class="current-shortcuts">J</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool picker">
+                    <span class="image"><img src="images/839092635cca7d43955dba23ef41d4c4.png" alt="colorpicker"></span>
+                    <span class="tool-name">color-picker</span>
+                    <span class="current-shortcuts">O</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool delete-frame">
+                    <span class="image"><img src="images/70bb3ef08f9d2ab04133a0ea0398e4f2.png" alt="recyclebin"></span>
+                    <span class="tool-name">delete frame</span>
+                    <span class="current-shortcuts">Ctrl + X</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                </div>
+                <div class="colum-2">
+                  <div class="tool add-frame">
+                    <span class="image"><img src="images/3f3b3b98b3014d7a6bf1e746ee89a827.png" alt="plus"></span>
+                    <span class="tool-name">add frame</span>
+                    <span class="current-shortcuts">Ctrl + V</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool dublicate-frame">
+                    <span class="image"><img src="images/f314d7d6d5c02325eed305a5927f80d4.png" alt="duplicate"></span>
+                    <span class="tool-name">dublicate frame</span>
+                    <span class="current-shortcuts">Ctrl + C</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool save">
+                    <span class="image"><img src="images/b972192bf67a5598eedf16ed33f7bf89.png" alt="save"></span>
+                    <span class="tool-name">save canvas</span>
+                    <span class="current-shortcuts">S</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool resize">
+                    <span class="image"><img src="images/8d900a81a2a44e22080a32cc8be0c2f0.png" alt="resize"></span>
+                    <span class="tool-name">resize canvas</span>
+                    <span class="current-shortcuts">R</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool keyboard">
+                    <span class="image"><img src="images/f8239f2d9ad011ed25b8a1642f2e467f.png" alt="keyboard"></span>
+                    <span class="tool-name">keyboard</span>
+                    <span class="current-shortcuts">K</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool increase-size-pen">
+                    <span class="tool-name">increase pen size</span>
+                    <span class="current-shortcuts">[</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool increase-size-pen">
+                    <span class="tool-name">decrease pen size</span>
+                    <span class="current-shortcuts">]</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool primary-color">
+                    <span class="tool-name">primary-color</span>
+                    <span class="current-shortcuts">L</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                  <div class="tool secondary-color">
+                    <span class="tool-name">secondary-color</span>
+                    <span class="current-shortcuts">K</span>
+                    <input class="next-shortcuts" type="text" placeholder="Change?">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="frames">
+        <ul class="frame-containers">
+          <li class="frame-container" draggable="true">
+            <div class="canvas-container">
+              <canvas id="pixel2" class="canvas2" width="106" height="106"></canvas>
+              <span class="frame-number">1</span>
+              <button class="canvas-container-delete"><img src="images/70bb3ef08f9d2ab04133a0ea0398e4f2.png" alt="recyclebin"></button>
+              <button class="canvas-container-dragndrop"><img src="images/9f83cee78c8eed05d835d384423fc619.png" alt="dragndrop"></button>
+              <button class="canvas-container-duplicate"><img src="images/f314d7d6d5c02325eed305a5927f80d4.png" alt="duplicate"></button>
+            </div>
+          </li>
+        </ul>
+        <button class="add-new-frame">
+					<div><img src="images/3f3b3b98b3014d7a6bf1e746ee89a827.png" alt="plus"></div>
+					<p>Add new frame</p>
+				</button>
+
+      </div>
+      <div class="works-place">
+        <canvas id="pixel" height='640' width='640'></canvas>
+      </div>
+      <div class="additional-tools">
+        <div class="small-animation">
+          <canvas id="small-canvas" width="200" height="200"></canvas>
+          <button class="full-screen" id="full-screen-mode"><img src="images/4b4bf9283f7e812798aad351925f0bbb.svg" alt="full-screen-mode"></button>
+          <div class="speed-animation">
+            <label for="cowbell">1 FPS</label>
+            <input type="range" id="cowbell" name="cowbell" min="0" max="24" value="1" step="1">
+          </div>
+        </div>
+        <div class="setting-button">
+          <div hidden class="button-size">
+            <button id="thirty-two">32x32</button>
+            <button id="sixty-four">64x64</button>
+            <button id="one-hundred-and-twenty-eight">128x128</button>
+          </div>
+          <button id="resize"><img src="images/8d900a81a2a44e22080a32cc8be0c2f0.png" alt="resize"></button>
+          <a id="save" href="" download="my-file-name.gif"><img src="images/b972192bf67a5598eedf16ed33f7bf89.png" alt="save"></a>
+        </div>
+        <p class="size-canvas"></p>
+      </div>
+    </main>
+  </div>
+  <script>
+    const buttonSingIn = document.querySelector('#my-signin2');
+    const buttonSingOut = document.querySelector('#sing-out');
+    const img = new Image();
+
+    function signIn() {
+      const auth2 = gapi.auth2.getAuthInstance();
+      auth2.signIn({
+        scope: 'https://www.googleapis.com/auth/drive'
+      }).then((googleUser) => {
+        buttonSingIn.setAttribute('hidden', 'true');
+        buttonSingOut.removeAttribute('hidden');
+        const profile = googleUser.getBasicProfile();
+        img.src = profile.getImageUrl();
+        img.classList.add('profile-image');
+        userName.textContent = `Hi ${profile.getName()}!`;
+        userName.after(img);
+      })
+    }
+
+    function signOut() {
+      const auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function() {
+        userName.textContent = '';
+        const img = document.querySelector('.profile-image');
+        img.remove();
+        buttonSingOut.setAttribute('hidden', 'true');
+        buttonSingIn.removeAttribute('hidden');
+      });
+    }
+
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'width': 150,
+        'height': 24,
+        'longtitle': true,
+      });
+    }
+
+    document.querySelector('#my-signin2').addEventListener('click', signIn);
+    document.querySelector('#sing-out').addEventListener('click', signOut)
+  </script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+<script type="text/javascript" src="pageTwo.bundle.js?e8855dbfc829594a2391"></script></body>
+
+</html>

@@ -1,0 +1,202 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: darkgrey;
+}
+
+button,
+input {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+
+header {
+  height: auto;
+  padding: 0 3% 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2D2D2D;
+}
+
+.logotip img {
+  width: 60%;
+}
+
+.decription {
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #888;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-to-sprite {
+  height: 25px;
+  line-height: 24px;
+  padding: 0 10px;
+  border-style: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #757575;
+  background-color: #fff;
+  transition: 0.3s background-color;
+}
+
+.screenshoots {
+  display: flex;
+  height: auto;
+  padding: 80px 0 80px;
+  background-color: darkgray;
+}
+
+.description-work {
+  margin: 150px 50px 0 50px;
+  color: cornsilk;
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.description-link-to-sprite {
+  height: 40px;
+  margin-top: -20px;
+  line-height: 24px;
+  padding: 20px 20px;
+  border-style: none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  transition: 0.3s background-color;
+}
+
+.example-screen {
+  margin-right: 40px;
+  width: 50%;
+}
+
+.example-screen img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.animatioon-example {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 40px;
+  background-color: #222222;
+}
+
+.description-example {
+  color: cornsilk;
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.gif-example img {
+  height: 200px;
+  margin-right: 15px;
+}
+
+.implemented-functional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 40px;
+  background-color: #222222;
+}
+
+.about-implemented-functional {
+  color: cornsilk;
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.crated-functional {
+  margin-right: 20px;
+  color: cornsilk;
+  font-family: 'Roboto', sans-serif;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer {
+  height: auto;
+  padding: 20px 150px 0 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2D2D2D;
+}
+
+.avatar img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.about-Vova h1 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.github {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.social a {
+  margin-right: 30px;
+  width: 15%;
+}
+
+.my-think {
+  font-family: 'Roboto', sans-serif;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=pageOne.css.map*/
